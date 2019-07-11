@@ -8,9 +8,17 @@ def main():
     print("Die 2: "+str(y))
 
     total=x+y
-    
+
     print("Total value: "+str(total))
 
+
+def askName():
+    name=input("What is your name?\n")
+    print(name)
+    print("Hallo, "+name+"!")
+
+
 if __name__ == "__main__":
+    askName()
     print("Rolling the dice...")
     main()
