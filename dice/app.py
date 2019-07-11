@@ -11,6 +11,12 @@ def main():
     
     print("Total value: "+str(total))
 
+    if total > 7:
+        print("You won!")
+    else:
+        print("You lost!")
+
+
 if __name__ == "__main__":
     print("Rolling the dice...")
     main()
