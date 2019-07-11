@@ -1,6 +1,6 @@
 import random
 
-def main():
+def main(name):
     x=int(random.uniform(1,6))
     y=int(random.uniform(1,6))
 
@@ -11,14 +11,21 @@ def main():
 
     print("Total value: "+str(total))
 
+    if total > 7:
+        print(name+" won!")
+    else:
+        print(name+" lost!")
+
 
 def askName():
-    name=input("What is your name?\n")
+    name=input("What is your name?\n> ")
     print(name)
     print("Hallo, "+name+"!")
 
+    return name
+
 
 if __name__ == "__main__":
-    askName()
+    name=askName()
     print("Rolling the dice...")
-    main()
+    main(name)
